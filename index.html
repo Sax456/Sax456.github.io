@@ -9,14 +9,43 @@
 <body>
   <header>
     <h1>My Movie Streaming Service</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Películas</a></li>
-        <li><a href="#">Series</a></li>
-        <li><a href="#">Mi Lista</a></li>
+    <nav class="navbar">
+  <div class="container">
+
+    <div class="navbar-header">
+      <button class="navbar-toggler" data-toggle="open-navbar1">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a href="#">
+        <h4>Your<span>Logo</span></h4>
+      </a>
+    </div>
+
+    <div class="navbar-menu" id="open-navbar1">
+      <ul class="navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="navbar-dropdown">
+          <a href="#" class="dropdown-toggler" data-dropdown="my-dropdown-id">
+            Categories <i class="fa fa-angle-down"></i>
+          </a>
+          <ul class="dropdown" id="my-dropdown-id">
+            <li><a href="#">Category 1</a></li>
+            <li class="separator"></li>
+            <li><a href="#">Category 2</a></li>
+            <li class="separator"></li>
+            <li><a href="#">Category 3</a></li>
+          </ul>
+        </li>
+     
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Signin</a></li>
       </ul>
-    </nav>
+    </div>
+  </div>
+</nav>
   </header>
   
   <main>
