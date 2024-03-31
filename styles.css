@@ -11,7 +11,7 @@
   }
   
   header {
-    background-color: #c51a1a;
+    background-color: #1C1C1C;
     color: #000000;
     padding: 20px;
   }
@@ -47,7 +47,7 @@
   }
   
   .movie img {
-    width: 100%;
+    width: 50%;
     border-radius: 5px;
     margin-bottom: 10px;
   }
