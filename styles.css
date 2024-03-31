@@ -1,0 +1,65 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos básicos */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #c51a1a;
+    color: #000000;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .movie {
+    width: calc(33.33% - 40px);
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .movie img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+
+  footer {
+    background-color: #ffffff;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
