@@ -30,7 +30,7 @@
   }
   
   nav ul li a {
-    color: #fff;
+    color: #c6c6c6;
     text-decoration: none;
   }
   
@@ -166,7 +166,7 @@ a {
 .navbar .navbar-header .navbar-toggler span {
   height: 2px;
   width: 22px;
-  background-color: #929aad;
+  background-color: #fa3d3b;
   display: block;
 }
 .navbar .navbar-header .navbar-toggler span:not(:last-child) {
@@ -174,7 +174,7 @@ a {
 }
 .navbar .navbar-header > a {
   font-weight: 500;
-  color: #3c4250;
+  color: #fa3d3b;
 }
 .navbar .navbar-menu {
   display: flex;
