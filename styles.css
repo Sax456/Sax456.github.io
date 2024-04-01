@@ -71,7 +71,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 0.925rem;
 }
 
@@ -105,9 +105,9 @@ a {
 
 .navbar {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  background-color: #c51a1a;
+  background-color: #1C1C1C;
   padding: 1rem 1.15rem;
-  border-bottom: 1px solid #eceef3;
+  border-bottom: 1px solid #1C1C1C;
   /*
   |-----------------------------------
   | Start navbar logo or brand etc..
