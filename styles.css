@@ -35,6 +35,31 @@ nav ul li a {
   text-decoration: none;
 }
 
+.navbar {
+  background-color: #000; /* Cambiamos el color de fondo de la barra de menú */
+  padding: 10px 20px; /* Añadimos relleno a la barra de menú */
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center; /* Centramos los elementos del menú */
+}
+
+.navbar ul li {
+  margin: 0 10px; /* Añadimos margen entre los elementos del menú */
+}
+
+.navbar ul li a {
+  color: #fff; /* Cambiamos el color del texto del menú */
+  text-decoration: none;
+  padding: 5px 10px; /* Añadimos relleno a los enlaces del menú */
+  border-radius: 5px; /* Redondeamos los bordes de los enlaces del menú */
+}
+
+.navbar ul li a:hover {
+  background-color: #333; /* Cambiamos el color de fondo al pasar el mouse */
+}
+
 main {
   padding: 20px;
   display: flex;
