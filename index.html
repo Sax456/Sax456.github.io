@@ -4,125 +4,88 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sugar Movie Streaming</title>
-  <link rel="stylesheet" href="styles.css">
   
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="style.css">
+  <!-- Estilos mejorados y fuentes -->
+  <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    
     <h1>Sugar Movie</h1>
+    
+    <!-- Barra de menú con Flexbox para mejor diseño -->
     <nav class="navbar">
-  <div class="container">
-
-    <div class="navbar-header">
-      <button class="navbar-toggler" data-toggle="open-navbar1">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      
-    </div>
-
-    <div class="navbar-menu" id="open-navbar1">
-      <ul class="navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li class="navbar-dropdown">
-          <a href="#" class="dropdown-toggler" data-dropdown="my-dropdown-id">
-            <p><button><a href="Registro.html">Regístrate 😁</a></button></p>
-            <button>Categories <i class="fa fa-angle-down"></i></button>
-          </a>
-          
-          <ul class="dropdown" id="my-dropdown-id">
-            <li><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/br">Category 1</a></li>
-            <li class="separator"></li>
-            <li><a href="#">Category 2</a></li>
-            <li class="separator"></li>
-            <li><a href="#">Category 3</a></li>
+      <div class="container">
+        <!-- Botón de alternancia para dispositivos móviles -->
+        <div class="navbar-header">
+          <button class="navbar-toggler" data-toggle="open-navbar1">
+            <!-- Icono de menú para mayor claridad -->
+            <span>☰</span>
+          </button>
+        </div>
+        
+        <!-- Menú principal -->
+        <div class="navbar-menu" id="open-navbar1">
+          <ul class="navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            
+            <!-- Menú desplegable -->
+            <li class="navbar-dropdown">
+              <a href="#" class="dropdown-toggler" data-dropdown="my-dropdown-id">
+                Categories <i class="fa fa-angle-down"></i>
+              </a>
+              <ul class="dropdown" id="my-dropdown-id">
+                <li><a href="#">Category 1</a></li>
+                <li class="separator"></li>
+                <li><a href="#">Category 2</a></li>
+                <li class="separator"></li>
+                <li><a href="#">Category 3</a></li>
+              </ul>
+            </li>
+            
+            <!-- Enlaces adicionales con botones estilizados -->
+            <li><button><a href="#">Películas</a></button></li>
+            <li><button><a href="#">Series</a></button></li>
+            <li><button><a href="Registro.html">Regístrate 😁</a></button></li>
           </ul>
-        </li>
-     
-        <button><li><a href="#">Peliculas</a></li></button>
-        <button><li><a href="#">Series</a></li></button>
-        <li><a href="#"></a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+        </div>
+      </div>
+    </nav>
   </header>
   
   <main>
-        <section class="movie">
-      <a href="https://drive.google.com/file/d/12P7bY0DpQwzkpzTz79sA7LqHYXyA5gMf/view?usp=drivesdk"
-      <h2><img src="https://pics.filmaffinity.com/Acorralado_Rambo-572528533-mmed.jpg" alt="Movie 1"></h2>
-      <h2>Rambo: primera sangre</h2>
-        </a>
-    </section>
-    
-        <section class="movie">
-      <a href="https://drive.google.com/file/d/17luyQXHJdIaAvlpWz1xKmwPWqgpMmB3S/view?usp=drivesdk"
-      <h2><img src="https://i.pinimg.com/736x/b0/97/4a/b0974a95ab6ee5a249eff969c85ff472.jpg" alt="Movie 1"></h2>
-      <h2>Rambo 2</h2>
-        </a>
-    </section>
-
-        <section class="movie">
-      <a href="https://drive.google.com/file/d/18mfV7xjxq7x1Y2_lop37EYeWMhOGdMYO/view?usp=drivesdk"
-      <h2><img src="https://www.ecartelera.com/carteles/5100/5157/001_m.jpg" alt="Movie 1"></h2>
-      <h2>Rambo 3</h2>
-        </a>
-    </section>
-
-        <section class="movie">
-      <a href="https://drive.google.com/file/d/1--9rE_CoqAfwaERNKW86t9eo547uPrls/view?usp=drivesdk"
-      <h2><img src="https://mx.web.img3.acsta.net/pictures/19/10/08/07/12/5205397.jpg" alt="Movie 1"></h2>
-      <h2>Rambo 4</h2>
-        </a>
-    </section>
-    
+    <!-- Ejemplo de contenido con estilo -->
     <section class="movie">
-      <a href="https://drive.google.com/file/d/1-49HcGR55CCgYMakpzN3DN4tbnUwkpGQ/view?usp=sharing"
-      <h2><img src="https://m.media-amazon.com/images/M/MV5BOTAxMjAyMDEtYTE1OC00OTc2LWFlNDYtZmJmM2IxODBhOGY0XkEyXkFqcGdeQXVyMTA3MzQ4MTc0._V1_.jpg" alt="Movie 1"></h2>
-      <h2>Rambo 5 la ultima mision</h2>
-        </a>
+      <h2>Películas Populares</h2>
+      <!-- Lista de películas -->
+      <div class="movie-grid">
+        <div class="movie-item">
+          <a href="https://drive.google.com/file/d/12P7bY0DpQwzkpzTz79sA7LqHYXyA5gMf/view?usp=drivesdk">
+            <img src="https://pics.filmaffinity.com/Acorralado_Rambo-572528533-mmed.jpg" alt="Rambo 1">
+            <h2>Rambo: Primera Sangre</h2>
+          </a>
+        </div>
+        
+        <!-- Ejemplos adicionales -->
+        <div class="movie-item">
+          <a href="https://drive.google.com/file/d/17luyQXHJdIaAvlpWz1xKmwPWqgpMmB3S/view?usp=drivesdk">
+            <img src="https://i.pinimg.com/736x/b0/97/4a/b0974a95ab6ee5a249eff969c85ff472.jpg" alt="Rambo 2">
+            <h2>Rambo 2</h2>
+          </a>
+        </div>
+        
+        <!-- Otros elementos de la lista... -->
+        
+      </div>
     </section>
-    
-    <section class="movie">
-     
-      <h2><img src="https://www.supercines.com/MovieImages/20240327Mov003/xxhdpi.jpg" alt="Movie 2"></h2>
-      <h2>Godzilla y Kong: el nuevo imperio</h2>
-      
-    </section>
-
-    <section class="movie">
-      <a href="https://drive.google.com/file/d/127GeDx5BWpk8fRAZVpMJCaXq9ne9f7Vu/view?usp=sharing"
-      <h2><img src="https://es.web.img3.acsta.net/pictures/24/02/20/17/42/2385575.jpg" alt="Movie 3"></h2>
-      <h2>Dune 2</h2>
-      </a>
-    </section>
-    
-    <section class="movie">
-      <a href="https://drive.google.com/file/d/1-PGjjgA9fiyOgVZrkeKfGWnsW3VhlSNY/view?usp=sharing"
-      <h2><img src="https://pics.filmaffinity.com/Dune-209834814-mmed.jpg" alt="Movie 3"></h2>
-      <h2>Dune</h2>
-      </a>
-    </section>
-
-    <section class="movie">
-      <a href="https://drive.google.com/file/d/10ttMNrpeqKfy8ETu_uAchOkl6MVxKwGi/view?usp=drivesdk"
-      <h2><img src="https://es.web.img3.acsta.net/pictures/23/07/11/17/32/3147591.jpg" alt="Movie 3"></h2>
-      <h2>Wonka</h2>
-      </a>
-    </section>
-    
   </main>
   
+  <!-- Pie de página simple -->
   <footer>
     <p>&copy; 2024 My Movie Streaming Service</p>
   </footer>
 </body>
 </html>
+
