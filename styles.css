@@ -7,50 +7,81 @@
 
 /* Estilos básicos */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Utilizar la fuente Roboto */
+    font-size: 16px; /* Tamaño de fuente base */
+    background-color: #f2f2f2; /* Color de fondo general */
 }
 
 header {
     background-color: #1C1C1C;
     color: #FA3D3B;
     padding: 20px;
+    text-align: center; /* Centrar el contenido del encabezado */
 }
 
 header h1 {
     margin: 0;
+    font-size: 2rem; /* Tamaño de fuente más grande para el título */
 }
 
 nav ul {
     list-style-type: none;
+    text-align: center; /* Centrar los elementos de la lista */
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block; /* Mostrar los elementos de la lista en línea */
     margin-right: 20px;
 }
 
 nav ul li a {
     color: #c6c6c6;
     text-decoration: none;
+    font-weight: 500; /* Añadir peso a la fuente */
+    transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+nav ul li a:hover {
+    color: #fff; /* Cambiar el color al pasar el mouse */
 }
 
 main {
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center; /* Centrar los elementos en el eje principal */
 }
 
 .movie {
     width: calc(33.33% - 40px);
     margin: 20px;
     text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
+.movie:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
 }
 
 .movie img {
-    width: 50%;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    animation: fadeIn 0.5s ease, scaleIn 0.5s ease;
+    width: 100%; /* Ajustar imagen al ancho del contenedor */
+    max-height: 300px; /* Limitar la altura máxima de la imagen */
+    object-fit: cover; /* Ajustar la imagen manteniendo la relación de aspecto */
+    border-top-left-radius: 8px; /* Añadir bordes redondeados a la imagen */
+    border-top-right-radius: 8px;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Estilos del botón con animación */
@@ -58,7 +89,7 @@ button {
     padding: 0.8em 1.8em;
     border-radius: 8px;
     background-color: transparent;
-    color: #e71e25;
+    color: #17c3b2;
     border: 2px solid #17c3b2;
     font-size: 16px;
     cursor: pointer;
@@ -87,6 +118,6 @@ button:hover::before {
 }
 
 button:hover {
-    color: #111;
+    color: #fff;
     background-color: #17c3b2; /* Cambiar el color de fondo al pasar el mouse */
 }
