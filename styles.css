@@ -6,8 +6,10 @@
   }
   
   /* Estilos básicos */
-  body {
-    font-family: Arial, sans-serif;
+ body {
+    font-family: 'Roboto', sans-serif; /* Utilizar la fuente Roboto */
+    font-size: 16px; /* Tamaño de fuente base */
+    background-color: #f2f2f2; /* Color de fondo general */
   }
   
   header {
@@ -44,12 +46,23 @@
     width: calc(33.33% - 40px);
     margin: 20px;
     text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
   }
+
+.movie:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+}
   
   .movie img {
     width: 50%;
     border-radius: 5px;
     margin-bottom: 10px;
+    object-fit: cover; /* Ajustar la imagen manteniendo la relación de aspecto */
+    border-top-left-radius: 8px; /* Añadir bordes redondeados a la imagen */
+    border-top-right-radius: 8px;
   }
 
 
