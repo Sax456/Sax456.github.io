@@ -67,8 +67,8 @@ main {
 }
 
 .movie img {
-    width: 100%; /* Ajustar imagen al ancho del contenedor */
-    max-height: 300px; /* Limitar la altura máxima de la imagen */
+    width: 50%; /* Ajustar imagen al ancho del contenedor */
+    max-height: 150px; /* Limitar la altura máxima de la imagen */
     object-fit: cover; /* Ajustar la imagen manteniendo la relación de aspecto */
     border-top-left-radius: 8px; /* Añadir bordes redondeados a la imagen */
     border-top-right-radius: 8px;
