@@ -60,7 +60,7 @@
     width: 50%;
     border-radius: 5px;
     margin-bottom: 10px;
-    object-fit: cover; /* Ajustar la imagen manteniendo la relación de aspecto */
+    
     border-top-left-radius: 8px; /* Añadir bordes redondeados a la imagen */
     border-top-right-radius: 8px;
   }
