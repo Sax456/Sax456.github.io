@@ -3,376 +3,90 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  /* Estilos básicos */
-  body {
+}
+
+/* Estilos básicos */
+body {
     font-family: Arial, sans-serif;
-  }
-  
-  header {
+}
+
+header {
     background-color: #1C1C1C;
     color: #FA3D3B;
     padding: 20px;
-  }
-  
-  header h1 {
+}
+
+header h1 {
     margin: 0;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style-type: none;
-  }
-  
-  nav ul li {
+}
+
+nav ul li {
     display: inline;
     margin-right: 20px;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
     color: #c6c6c6;
     text-decoration: none;
-  }
-  
-  main {
+}
+
+main {
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
-  }
-  
-  .movie {
+}
+
+.movie {
     width: calc(33.33% - 40px);
     margin: 20px;
     text-align: center;
-  }
-  
-  .movie img {
+}
+
+.movie img {
     width: 50%;
     border-radius: 5px;
     margin-bottom: 10px;
-  }
-
-
-  footer {
-    background-color: #000000;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  font-family: "Arial", sans-serif;
-  font-size: 0.925rem;
-}
-
-a {
-  text-decoration: none;
-}
-
-.container {
-  width: 1170px;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.navbar,
-.navbar > .container {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-@media (max-width: 768px) {
-  .navbar,
-.navbar > .container {
-    display: block;
-  }
-}
-
-.navbar {
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  background-color: #1C1C1C;
-  padding: 1rem 1.15rem;
-  border-bottom: 1px solid #1C1C1C;
-  /*
-  |-----------------------------------
-  | Start navbar logo or brand etc..
-  |-----------------------------------
-  */
-  /*
-  |-----------------------------------
-  | Start navbar menu
-  |-----------------------------------
-  */
-}
-@media (min-width: 576px) {
-  .navbar .container {
-    max-width: 540px;
-  }
-}
-@media (min-width: 768px) {
-  .navbar .container {
-    max-width: 720px;
-  }
-}
-@media (min-width: 992px) {
-  .navbar .container {
-    max-width: 960px;
-  }
-}
-@media (min-width: 1200px) {
-  .navbar .container {
-    max-width: 1140px;
-  }
-}
-.navbar .navbar-header {
-  display: flex;
-  align-items: center;
-}
-@media (max-width: 768px) {
-  .navbar .navbar-header {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-  }
-}
-.navbar .navbar-header .navbar-toggler {
-  cursor: pointer;
-  border: none;
-  display: none;
-  outline: none;
-}
-@media (max-width: 768px) {
-  .navbar .navbar-header .navbar-toggler {
-    display: block;
-  }
-}
-.navbar .navbar-header .navbar-toggler span {
-  height: 2px;
-  width: 22px;
-  background-color: #fa3d3b;
-  display: block;
-}
-.navbar .navbar-header .navbar-toggler span:not(:last-child) {
-  margin-bottom: 0.2rem;
-}
-.navbar .navbar-header > a {
-  font-weight: 500;
-  color: #fa3d3b;
-}
-.navbar .navbar-menu {
-  display: flex;
-  align-items: center;
-  flex-basis: auto;
-  flex-grow: 1;
-}
-@media (max-width: 768px) {
-  .navbar .navbar-menu {
-    display: none;
-    text-align: center;
-  }
-}
-.navbar .navbar-menu.active {
-  display: flex !important;
-}
-.navbar .navbar-menu .navbar-nav {
-  margin-left: auto;
-  flex-direction: row;
-  display: flex;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
-@media (max-width: 768px) {
-  .navbar .navbar-menu .navbar-nav {
-    width: 100%;
-    display: block;
-    border-top: 1px solid #EEE;
-    margin-top: 1rem;
-  }
-}
-.navbar .navbar-menu .navbar-nav > li > a {
-  color: #fa3d3b;
-  text-decoration: none;
-  display: inline-block;
-  padding: 0.5rem 1rem;
-}
-.navbar .navbar-menu .navbar-nav > li > a:hover {
-  color: #66f;
-}
-@media (max-width: 768px) {
-  .navbar .navbar-menu .navbar-nav > li > a {
-    border-bottom: 1px solid #eceef3;
-  }
-}
-.navbar .navbar-menu .navbar-nav > li.active a {
-  color: #66f;
-}
-.navbar .navbar-menu .navbar-nav .navbar-dropdown .dropdown {
-  list-style: none;
-  position: absolute;
-  top: 150%;
-  left: 0;
-  background-color: #fff;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  min-width: 160px;
-  width: auto;
-  white-space: nowrap;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  z-index: 99999;
-  border-radius: 0.75rem;
-  display: none;
-}
-@media (max-width: 768px) {
-  .navbar .navbar-menu .navbar-nav .navbar-dropdown .dropdown {
-    position: relative;
-    box-shadow: none;
-  }
-}
-.navbar .navbar-menu .navbar-nav .navbar-dropdown .dropdown li a {
-  color: #3c4250;
-  padding: 0.25rem 1rem;
-  display: block;
-}
-.navbar .navbar-menu .navbar-nav .navbar-dropdown .dropdown.show {
-  display: block !important;
-}
-.navbar .navbar-menu .navbar-nav .dropdown > .separator {
-  height: 1px;
-  width: 100%;
-  margin-top: 9px;
-  margin-bottom: 9px;
-  background-color: #eceef3;
-}
-.navbar .navbar-dropdown {
-  position: relative;
-}
-
-.navbar .navbar-header > a span {
-  color: #66f;
-}
-
-.navbar .navbar-header h4 {
-  font-weight: 500;
-  font-size: 1.25rem;
-}
-@media (max-width: 768px) {
-  .navbar .navbar-header h4 {
-    font-size: 1.05rem;
-  }
-}
-//boton//
-
-button{
-	padding: 0.8em 1.8em;
-	border-radius: 8px;
-	background-color: transparent;
-	color:#17c3b2;
-	border:2px solid #17c3b2;
-	font-size: 16px;
-	cursor: pointer;
-	z-index: 1;
-	transition: 0.3s;
-	overflow:hidden ;
-	position: relative;
-}
-button:before{
-	content:'';
-	width: 0;
-	height: 300%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transition: 0.5s ease;
-	transform: translate(-50%,-50%) rotate(45deg);
-	display: block;
-	z-index: -1;
-	background-color: #17c3b2;
-}
-button:hover::before{
-	width: 105%;
-}
-button:hover{
-	color:#111;
-}
-/* Animaciones */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes scaleIn {
-  from {
-    transform: scale(0.5);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-/* Aplicar animaciones a las imágenes */
-.movie img {
-  width: 50%;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  animation: fadeIn 0.5s ease, scaleIn 0.5s ease;
+    animation: fadeIn 0.5s ease, scaleIn 0.5s ease;
 }
 
 /* Estilos del botón con animación */
 button {
-  padding: 0.8em 1.8em;
-  border-radius: 8px;
-  background-color: transparent;
-  color: #e71e25;
-  border: 2px solid #17c3b2;
-  font-size: 16px;
-  cursor: pointer;
-  z-index: 1;
-  overflow: hidden;
-  position: relative;
-  transition: background-color 0.3s ease; /* Añadir transición al cambio de color de fondo */
+    padding: 0.8em 1.8em;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #e71e25;
+    border: 2px solid #17c3b2;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.3s ease; /* Añadir transición al cambio de color de fondo */
 }
 
 button:before {
-  content: '';
-  width: 0;
-  height: 300%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transition: 0.5s ease;
-  transform: translate(-50%, -50%) rotate(45deg);
-  display: block;
-  z-index: -1;
-  background-color: #17c3b2;
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: 0.5s ease;
+    transform: translate(-50%, -50%) rotate(45deg);
+    display: block;
+    z-index: -1;
+    background-color: #17c3b2;
 }
 
 button:hover::before {
-  width: 105%;
+    width: 105%;
 }
 
 button:hover {
-  color: #111;
-  background-color: #17c3b2; /* Cambiar el color de fondo al pasar el mouse */
+    color: #111;
+    background-color: #17c3b2; /* Cambiar el color de fondo al pasar el mouse */
 }
