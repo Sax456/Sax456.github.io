@@ -47,12 +47,9 @@
     margin: 20px;
     text-align: center;
     background-color: #fff;
-    transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+   
   }
 
-.movie:hover {
-    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
-}
   
   .movie img {
     width: 50%;
